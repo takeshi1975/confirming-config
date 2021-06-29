@@ -1,0 +1,27 @@
+#path gw-sist
+env.gatewaysist-url: https://serviciosfyc.santander.dev.corp
+
+#path logging Kafka
+env.logging-server: kafkadarwin.santander.dev.corp:9092
+
+#servicios comunes
+env.pkm-endpoint: https://srvnuarintra.santander.dev.corp/pkm/v1/publicKey
+env.sts-endpoint: https://srvnuarintra.santander.dev.corp/sts
+
+#BBDD Confirming
+env.confirming.informix-url: jdbc:informix-sqli://bvsalfacbd01.santander.dev.corp:60000/confirm:INFORMIXSERVER=infol_des;delimident=y
+env.confirming.hikari-maximum-pool-size: 50
+env.confirming.hikari-minimum-idle: 50
+env.confirming.hikari-connection-timeout: 20000
+env.confirming.hikari-max-lifetime: 1800000
+env.confirming.informix-username: usuconj
+env.confirming.informix-password: usuconj.
+
+#BBDD Factoring
+env.factoring.informix-url: jdbc:informix-sqli://bvsalfacbd01.santander.dev.corp:60000/sfg:INFORMIXSERVER=infol_des
+env.factoring.hikari-maximum-pool-size: 50
+env.factoring.hikari-minimum-idle: 50
+env.factoring.hikari-connection-timeout: 20000
+env.factoring.hikari-max-lifetime: 1800000
+env.factoring.informix-username: usufacj
+env.factoring.informix-password: usufacj.
